@@ -1,0 +1,51 @@
+:root {
+	--school-gpa-level-1 #d7737d;
+	--school-gpa-level-2 #c194b5;
+	--school-gpa-level-3 #b4a7d6;
+	--school-gpa-level-4 #a6a8da;
+	--school-gpa-level-5 #75ace5;
+
+	--avatar-placeholder-1 #f1603c;
+	--avatar-placeholder-2 #6082fa;
+	--avatar-placeholder-3 #827cb8;
+	--avatar-placeholder-4 #0097a4;
+	--avatar-placeholder-5 #ffe066;
+	--avatar-placeholder-6 #ffa94d;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  font-weight: normal;
+}
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+body {
+  font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
+    Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@media (min-width: 375px) {
+
+}
+
+@media (min-width: 425px) {
+	
+}
+
+@media (min-width: 768px) {
+	
+}
+
+@media (min-width: 1024px) {
+	
+}
