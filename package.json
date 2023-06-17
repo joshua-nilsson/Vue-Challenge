@@ -15,9 +15,18 @@
     "@vitejs/plugin-vue": "^4.2.3",
     "eslint": "^8.39.0",
     "eslint-plugin-vue": "^9.11.0",
+    "sass": "^1.63.4",
     "vite": "^4.3.9"
   },
-  "browserslist": ["> 1%", "last 2 versions", "not ie <= 8"],
-  "keywords": ["SportsRecruits", "Vue", "Challenge"],
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ],
+  "keywords": [
+    "SportsRecruits",
+    "Vue",
+    "Challenge"
+  ],
   "description": "SportsRecruits Vue Challenge"
 }

@@ -1,10 +1,7 @@
 <script setup>
-import AthleteData from "./assets/data.json"
-import AcademicFitReport from "./components/AcademicFitReport.vue"
+import AFR from "./components/AFR.vue"
 </script>
 
 <template>
-	<AcademicFitReport :athlete="AthleteData?.data[0]" />
+	<AFR />
 </template>
-
-<style scoped></style>
