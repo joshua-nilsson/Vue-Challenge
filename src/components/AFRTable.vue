@@ -24,8 +24,8 @@ const gpa = ref(props.athlete?.gpa)
 					<th rowspan="2">Conference</th>
 					<th rowspan="2">
 						Ranking*<br />
-						(DI NCAA)<br />
-						(DII & DIII Hero Sports)
+						<span>(DI NCAA)</span><br />
+						<span>(DII & DIII Hero Sports)</span>
 					</th>
 					<th colspan="5">GPA**</th>
 					<th rowspan="2">
@@ -47,7 +47,7 @@ const gpa = ref(props.athlete?.gpa)
 				</tr>
 			</thead>
 			<tbody>
-				<AFRRow v-for="(report, index) in  reports " :key="index" v-bind="{ report, gpa }" />
+				<AFRRow v-for="(report, index) in reports" v-bind="{ report, gpa }" :key="index" />
 			</tbody>
 		</table>
 	</section>
@@ -70,7 +70,7 @@ const gpa = ref(props.athlete?.gpa)
 	}
 
 	th {
-		padding: 0 1rem;
+		padding: 0.25rem 1rem;
 		color: var(--white);
 		font-size: 1.2rem;
 		font-weight: 700;
@@ -93,16 +93,14 @@ const gpa = ref(props.athlete?.gpa)
 
 	tbody tr:nth-child(even),
 	tbody tr:nth-child(even) .sticky-column {
-		background-color: #E8F0FE;
-	}
-
-	td.sticky-column {
-		z-index: 999;
+		background-color: var(--white-alt);
 	}
 
 	@media (min-width: 1325px) {
-		display: table;
-		table-layout: initial;
+		table {
+			display: table;
+			table-layout: initial;
+		}
 
 		.sticky-column {
 			border: none;

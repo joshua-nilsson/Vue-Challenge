@@ -11,9 +11,8 @@ const BLOCK = "AFRTitle"
 
 <style scoped lang="scss">
 .AFRTitle {
-	text-align: left;
-
 	order: 0;
+	text-align: left;
 
 	@media (min-width: 1024px) {
 		width: 25%;

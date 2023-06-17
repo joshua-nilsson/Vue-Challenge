@@ -28,7 +28,7 @@ const getGPAColor = computed(() => {
 			return 'gpa-3'
 		case gpaDiff < 0 && gpaDiff >= -0.1:
 			return 'gpa-4'
-		case gpaDiff <= -0.1:
+		case gpaDiff < -0.1:
 			return 'gpa-5'
 		default:
 			return null

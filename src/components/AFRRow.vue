@@ -28,9 +28,9 @@ const reports = ref(props.report)
 		<AFRGPA :schoolGPA="reports?.gpa?.['50%']" v-bind="{ gpa }" />
 		<td>{{ reports?.gpa?.['75%']?.toFixed(2) }}</td>
 		<td>{{ reports?.gpa?.max?.toFixed(2) }}</td>
-		<td>{{ reports?.sat?.reading?.['min'] }} - {{ reports?.sat?.reading?.['max'] }}</td>
-		<td>{{ reports?.sat?.math?.['min'] }} - {{ reports?.sat?.math?.['max'] }}</td>
-		<td>{{ reports?.act?.['min'] }} - {{ reports?.act?.['max'] }}</td>
+		<td>{{ reports?.sat?.reading?.min }} - {{ reports?.sat?.reading?.max }}</td>
+		<td>{{ reports?.sat?.math?.min }} - {{ reports?.sat?.math?.max }}</td>
+		<td>{{ reports?.act?.min }} - {{ reports?.act?.max }}</td>
 	</tr>
 </template>
 

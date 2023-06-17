@@ -40,7 +40,8 @@ if (lastInitial?.match(pattern)) {
 <template>
 	<div :class="BLOCK">
 		<div :class="`${BLOCK}-Avatar`">
-			<img v-if="atdhlete?.profile_image" :src="athlete.profile_image"
+			<!-- If the athlete's profile image cannot be found, display a placeholder avatar with the athlete's first and last initials -->
+			<img v-if="athlete?.profile_image" :src="athlete.profile_image"
 				:alt="`${athlete?.name ? `${athlete.name}\'s` : 'Athlete\'s'} Profile Picture`" />
 			<div v-else :class="avatarColor">
 				<span>{{ firstInitial }}</span>
